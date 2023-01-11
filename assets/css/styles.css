@@ -254,5 +254,26 @@ img {
 
 .home-social{
     display: grid;
-
+    grid-template-columns: max-content;
+    row-gap: 1rem;
 }
+
+.home-social-icon{
+    font-size: 1.25rem;
+    color: var(--first-color)
+}
+
+/*Avatar main*/
+.home-social-icon:hover{
+    color: var(--first-color-alt)
+}
+
+.home-blob{
+    width: 200px;
+    fill: var(--first-color);
+}
+
+.home-blob-img{
+    width: 170px;
+}
+
