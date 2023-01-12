@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--icons-->
-     <!--   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>-->
-
         <!--swiper css-->
         <link rel="stylesheet" href="">
+
+        <!--icons-->
+        <link rel="stylesheet" href="assets/css/icon-fonts.css">
 
         <!--main css-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -23,48 +22,38 @@
                     <ul class="nav-list grid">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">
-                                <i class="test-icon nav-icon"></i>Home
+                                <span class="icon-home nav-icon"></span>Home
                             </a>
                         </li>
                         <li class="nav-item" >
                             <a href="#about" class="nav-link">
-                                <i class="test-icon"></i>About
+                                <span class="icon-user nav-icon"></span>About
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#skills" class="nav-link">
-                                <!--<i class="test-icon nav-icon"></i>-->
-                                Skills
+                                <span class="icon-file-text2 nav-icon"></span>Skills
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#services" class="nav-link">
-                                <!--<i class="test-icon nav-icon"></i>-->
-                                Services
+                                <span class="icon-briefcase nav-icon"></span>Services
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#portfolio" class="nav-link">
-                                <!--<i class="test-icon nav-icon"></i>-->
-                                Portfolio
+                                <span class="icon-image nav-icon"></span>Portfolio
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#portfolio" class="nav-link">
-                                <!--<i class="test-icon nav-icon"></i>-->
-                                Contact me
+                                <span class="icon-compass nav-icon"></span>Contact me
                             </a>
                         </li>
                     </ul>
                     <div class="nav-close nav-icon" id="nav-close">&#10005;</div>
                 </div>
                 <div class="nav-buttons">
-                    <!--<div class="nav-toggle" id="nav-toggle">
-                        &lt;!&ndash;<div class="test-toggle">|||</div>&ndash;&gt;
-                            <div class="burger-line1"></div>
-                            <div class="burger-line2"></div>
-                            <div class="burger-line3"></div>
-                    </div>-->
                     <div class="nav-toggle" id="nav-toggle">
                         <div class="hamburger-line"></div>
                         <div class="hamburger-line"></div>
@@ -72,7 +61,6 @@
                     </div>
                 </div>
             </nav>
-
         </header>
         <main class="main">
             <section class="home-Section" id="home">
@@ -82,13 +70,16 @@
                             <a href="https://www.linkedin.com/in/kirill-dolzhenkov-a30557206/"
                                target="_blank"
                                class="home-social-icon">
-                                <i class="uil uil-linkedin-alt">Linkedin</i>
+                                <span class="icon-linkedin"></span>
                             </a>
                             <a href="https://t.me/AN5H1N" target="_blank" class="home-social-icon">
-                                <i class="uil uil-telegram">Telegram</i>
+                                <span class="icon-telegram"></span>
                             </a>
                             <a href="https://github.com/KirillDolzhenkov" target="_blank" class="home-social-icon">
-                                <i class="uil uil-github-alt">GitHub</i>
+                                <span class="icon-github"></span>
+                            </a>
+                            <a href="mailto:k.dolzhenkov@gmail.com" target="_blank" class="home-social-icon">
+                                <span class="icon-mail"></span>
                             </a>
                         </div>
                         <div class="home-img">
@@ -102,14 +93,12 @@
                                 </g>
                             </svg>
                         </div>
-
-
                         <div class="home-data">
                             <h1 class="home-tittle">Hi, I'am Kirill Dolzhenkov</h1>
                             <h3 class="home-subtittle">Frontend developer</h3>
                             <p class="home-description">with experience in creating and optimization SPA using React, Redux, Typescript, HTML, CSS, JS</p>
                             <a href="#contact" class="button button-flex">
-                                Contact Me <i class="button-icon"></i>
+                                Contact Me<span class="icon-circle-right button-icon"></span>
                             </a>
                         </div>
                     </div>
@@ -117,15 +106,99 @@
                         <a href="#about" class="home-scroll-button button-flex">
                             <!--<i class="test-scroll home-scroll-mouse"></i>-->
                             <span class="home-scroll-name">Scroll down</span>
-                            <!--<i class="test-scroll home-scroll-arrow"></i>-->
+                            <span class="icon-arrow-down2 home-scroll-arrow"></span>
                         </a>
                     </div>
                 </div>
             </section>
-
             <section class="about-section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <span class="section-subtitle">My introduction</span>
+                <div class="about-container container grid">
+                    <img src="assets/img/about.png" alt="" class="about-img">
+                    <div class="about-data">
+                        <p class="about-description">As a developer, I am enjoying what i am doing and trying to become more competent in the field.</p>
+                        <!--test-->
+                        <div class="about-info">
+                           <div>
+                               <span class="about-info-title">1</span>
+                               <span class="about-info-name">year <br> experience</span>
+                           </div>
+                            <div>
+                                <span class="about-info-title">1</span>
+                                <span class="about-info-name">year <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about-info-title">1</span>
+                                <span class="about-info-name">year <br> experience</span>
+                            </div>
+                        </div>
+                        <!--test-->
+                    </div>
+                    <div class="about-buttons">
+                        <a download="" href="assets/pdf/cv-dolzhenkov-kirill.pdf" class="button button-flex">
+                            Download CV<span class="icon-download3 button-icon"></span>
+                        </a>
+                    </div>
+                </div>
             </section>
-
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <span class="section-subtitle">My tecnical level</span>
+                <div class="skills-container grid">
+                    <div>
+                        <div class="skills-content">
+                            <div class="skills-header">
+                                <span class="icon-embed2 skills-icon"></span>
+                                <div>
+                                    <h1 class="skills-title">Frontend developer</h1>
+                                    <span class="skills-subtitle">More than 4 years</span>
+                                </div>
+                                <span class="icon-arrow-down2 skills-arrow"></span>
+                            </div>
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-title">
+                                        <h3 class="skills-name">HTML</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-title">
+                                        <h3 class="skills-name">CSS</h3>
+                                        <span class="skills-number">60%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-title">
+                                        <h3 class="skills-name">JavaScript</h3>
+                                        <span class="skills-number">70%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-title">
+                                        <h3 class="skills-name">REACT</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html"></span>
+                                        <button class="ripple">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="qualification-section" id="qualification">
             </section>
 
