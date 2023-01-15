@@ -63,13 +63,11 @@
             </nav>
         </header>
         <main class="main">
-            <section class="home-Section" id="home">
+            <section class="home section" id="home">
                 <div class="home-container container grid">
                     <div class="home-content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/kirill-dolzhenkov-a30557206/"
-                               target="_blank"
-                               class="home-social-icon">
+                        <div class="home-social">
+                            <a href="https://www.linkedin.com/in/kirill-dolzhenkov-a30557206/" target="_blank" class="home-social-icon">
                                 <span class="icon-linkedin"></span>
                             </a>
                             <a href="https://t.me/AN5H1N" target="_blank" class="home-social-icon">
@@ -97,21 +95,33 @@
                             <h1 class="home-tittle">Hi, I'am Kirill Dolzhenkov</h1>
                             <h3 class="home-subtittle">Frontend developer</h3>
                             <p class="home-description">with experience in creating and optimization SPA using React, Redux, Typescript, HTML, CSS, JS</p>
-                            <a href="#contact" class="button button-flex">
+                           <!-- <a href="#contact" class="button button-flex ripple">
                                 Contact Me<span class="icon-circle-right button-icon"></span>
-                            </a>
+                            </a>-->
+                            <div class="home-test-toggle">
+                                <a href="#contact" class="button button-flex ripple">
+                                    Contact Me<span class="icon-circle-right button-icon"></span>
+                                </a>
+                                <div class="home-scroll">
+                                    <a href="#about" class="home-scroll-button button-flex">
+                                        <!--<i class="test-scroll home-scroll-mouse"></i>-->
+                                        <span class="home-scroll-name">Scroll down</span>
+                                        <span class="icon-arrow-down2 home-scroll-arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="home-scroll">
+                    <!--<div class="home-scroll">
                         <a href="#about" class="home-scroll-button button-flex">
-                            <!--<i class="test-scroll home-scroll-mouse"></i>-->
+                            &lt;!&ndash;<i class="test-scroll home-scroll-mouse"></i>&ndash;&gt;
                             <span class="home-scroll-name">Scroll down</span>
                             <span class="icon-arrow-down2 home-scroll-arrow"></span>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
             </section>
-            <section class="about-section" id="about">
+            <section class="about section" id="about">
                 <h2 class="section-title">About Me</h2>
                 <span class="section-subtitle">My introduction</span>
                 <div class="about-container container grid">
@@ -136,7 +146,7 @@
                         <!--test-->
                     </div>
                     <div class="about-buttons">
-                        <a download="" href="assets/pdf/cv-dolzhenkov-kirill.pdf" class="button button-flex">
+                        <a download="" href="assets/pdf/cv-dolzhenkov-kirill.pdf" class="button button-flex ripple">
                             Download CV<span class="icon-download3 button-icon"></span>
                         </a>
                     </div>
@@ -144,12 +154,13 @@
             </section>
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
-                <span class="section-subtitle">My tecnical level</span>
+                <span class="section-subtitle">My technical level</span>
                 <div class="skills-container grid">
                     <div>
                         <div class="skills-content">
                             <div class="skills-header">
                                 <span class="icon-embed2 skills-icon"></span>
+
                                 <div>
                                     <h1 class="skills-title">Frontend developer</h1>
                                     <span class="skills-subtitle">More than 4 years</span>
@@ -191,7 +202,6 @@
                                     </div>
                                     <div class="skills-bar">
                                         <span class="skills-percentage skills-html"></span>
-                                        <button class="ripple">Button</button>
                                     </div>
                                 </div>
                             </div>

@@ -35,7 +35,7 @@
     /*margin-bottom*/
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
-    --mb-0-75: 75rem;
+    --mb-0-75: .75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
@@ -99,6 +99,7 @@ img {
 
 .section {
     padding: 2rem 0 4rem;
+    border: solid green 2px;
 }
 
 .section-title {
@@ -160,9 +161,9 @@ img {
     cursor: pointer;
 }
 
-/*.nav-toggle:hover {
+.nav-toggle:hover {
     color: var(--first-color);
-}*/
+}
 
 .hamburger-line {
     width: 20px;
@@ -235,33 +236,37 @@ img {
 
 .home-container{
     gap: 1rem;
+    border: solid purple 2px;
 }
 
 .home-content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
     align-items: center;
+    border: solid sienna 2px;
 }
 
 .home-social{
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    border: solid darkgray 2px;
 }
 
 .home-social-icon{
     font-size: 1.25rem;
-    color: var(--first-color)
+    color: var(--first-color);
 }
 
 /*Avatar main*/
 .home-social-icon:hover{
-    color: var(--first-color-alt)
+    color: var(--first-color-alt);
 }
 
 .home-blob{
     width: 200px;
     fill: var(--first-color);
+    border: solid greenyellow 2px
 }
 
 .home-blob-img{
@@ -270,6 +275,7 @@ img {
 
 .home-data{
     grid-column: 1/3;
+    border: solid black 2px
 }
 
 .home-subtittle{
@@ -280,6 +286,16 @@ img {
 .home-description {
    margin-bottom: var(--mb-2);
 }
+
+/*test*/
+.home-test-toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    border: aqua solid 2px;
+}
+/*test*/
 
 /*scroll*/
 .home-scroll-button{
@@ -309,6 +325,8 @@ img {
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+
+    box-shadow: 0 0 4px #999;
 }
 
 .button:hover{
@@ -325,6 +343,36 @@ img {
     display: inline-flex;
     align-items: center;
 }
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: var(--first-color-alt) radial-gradient(circle, transparent 1%, var(--first-color-alt) 1%) center/15000%;
+}
+.ripple:active {
+    background-color: var(--first-color);
+    background-size: 100%;
+    transition: background 0s;
+}
+/* Ripple effect */
+
+/* Button style */
+/*button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+}*/
 
 .about-img{
     width: 200px;
@@ -367,6 +415,7 @@ img {
 
 .skills-container{
     row-gap: 0;
+    border: solid red 2px;
 }
 
 .skills-header{
@@ -383,6 +432,26 @@ img {
 }
 
 .skills-icon{
-    margin-bottom: var(--mb-0-75);
+    margin-right: var(--mb-0-75);
 }
 
+.skills-title{
+    font-size: var(--h3-font-size);
+    border: solid blue 2px;
+}
+
+.skills-subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills-arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
