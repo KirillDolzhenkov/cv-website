@@ -424,7 +424,7 @@ img {
 
 .skills-container{
     row-gap: 0;
-    border: solid red 2px;
+    /*border: solid red 2px;*/
 }
 
 .skills-header{
@@ -433,7 +433,7 @@ img {
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
 
-    border: aqua solid 2px;
+    /*border: aqua solid 2px;*/
 }
 
 .skills-icon,
@@ -444,32 +444,34 @@ img {
 
 .skills-icon{
     margin-right: var(--mb-0-75);
-    border: darkred solid 2px;
+    /*border: darkred solid 2px;*/
 }
+
 /*test (need to rename if it would be used)*/
 .front-test{
     width: 100%;
     margin: auto;
-    text-align: center;
-    border: 1px solid red;
+    /*text-align: center;*/
+    /*border: 1px solid red;*/
 }
 /*test*/
 
 .skills-title{
     font-size: var(--h3-font-size);
-    border: solid blue 2px;
+    /*border: solid blue 2px;*/
 }
 
 .skills-subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
-    border: darkred solid 2px;
+    /*border: darkred solid 2px;*/
 }
 
 .skills-arrow{
     margin-left: auto;
     transition: .4s;
-    border: darkred solid 2px;
+    transform: rotate(180deg);
+    /*border: darkred solid 2px;*/
 }
 
 /*html css and other little titles*/
@@ -532,5 +534,6 @@ img {
 }
 
 .skills-open .skills-arrow{
-    transform: rotate(-180deg);
+    /*transform: rotate(-180deg);*/
+    transform: rotate(0deg);
 }
