@@ -467,15 +467,14 @@ img {
     /*border: darkred solid 2px;*/
 }
 
-.skills-arrow{
+.skills-arrow {
     margin-left: auto;
     transition: .4s;
-    transform: rotate(180deg);
     /*border: darkred solid 2px;*/
 }
 
 /*html css and other little titles*/
-.skills-titles{
+.skills-titles {
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
@@ -485,7 +484,6 @@ img {
 
 .skill-name{
     font-size: var(--normal-font-size);
-
 }
 
 .skills-bar,
@@ -523,17 +521,24 @@ img {
     width: 80%;
 }
 
-.skills-close .skills-list{
+.skills-list{
+    height: 0;
+    transition: height ease-in-out .2s;
+}
+
+.skills-close .skills-list {
     height: 0;
     overflow: hidden;
+    opacity: 0;
 }
 
 .skills-open .skills-list{
-    height: max-content;
+    /*height: max-content;*/
+    height: 400px;
     overflow: var(--mb-2-5);
+    opacity: 1;
 }
 
 .skills-open .skills-arrow{
-    /*transform: rotate(-180deg);*/
-    transform: rotate(0deg);
+    transform: rotate(-180deg);
 }
