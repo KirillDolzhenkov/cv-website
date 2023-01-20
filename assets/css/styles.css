@@ -282,6 +282,15 @@ img {
     bottom: 0;
 }
 
+
+/*TEST*/
+.home {
+    /*
+    background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    */
+    background: linear-gradient(#2b1055, #7587de);
+}
+
 .home-container {
     gap: 1rem;
     border: solid purple 2px;
@@ -378,10 +387,23 @@ img {
     font-weight: var(--font-medium);
 
     box-shadow: 0 0 4px #999;
+
+    /* Ripple effect */
+    background-position: center;
+    transition: background 0.8s;
 }
 
 .button:hover {
     background-color: var(--first-color-alt);
+
+    /* Ripple effect */
+    background: var(--first-color-alt) radial-gradient(circle, transparent 1%, var(--first-color-alt) 1%) center/15000%;
+}
+
+.button:active {
+    background-color: var(--first-color);
+    background-size: 100%;
+    transition: background 0s;
 }
 
 .button-icon {
@@ -396,7 +418,7 @@ img {
 }
 
 /* Ripple effect */
-.ripple {
+/*.ripple {
     background-position: center;
     transition: background 0.8s;
 }
@@ -409,9 +431,9 @@ img {
     background-color: var(--first-color);
     background-size: 100%;
     transition: background 0s;
-}
+}*/
 
-/* Ripple effect */
+
 
 /* Button style */
 /*button {
@@ -427,18 +449,21 @@ img {
     outline: none;
 }*/
 
+.about{
+
+}
+
 .about-img {
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
-
 }
 
 .about-description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
-    border: solid greenyellow 2px
+    border: solid greenyellow 2px;
 }
 
 .about-info {
@@ -458,6 +483,7 @@ img {
 .about-info-name {
     font-size: var(--smaller-font-size);
     border: red solid 2px;
+
 }
 
 .about-info-name,

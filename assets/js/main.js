@@ -66,3 +66,12 @@ themeButton.addEventListener('click',() => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     /*localStorage.setItem('selected-icon', getCurrentTheme());*/
 });
+
+//parallax
+const aboutSection = document.getElementById('home');
+
+function changePosition() {
+    aboutSection.style.backgroundPositionY =  `${window.scrollY * 0.7}px`;
+}
+
+window.addEventListener('scroll',changePosition);
