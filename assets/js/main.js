@@ -68,10 +68,14 @@ themeButton.addEventListener('click',() => {
 });
 
 //parallax
-const aboutSection = document.getElementById('home');
+const stars = document.getElementById('stars');
+const cloud = document.getElementById('clouds');
 
 function changePosition() {
-    aboutSection.style.backgroundPositionY =  `${window.scrollY * 0.7}px`;
+    let value = window.scrollY;
+    stars.style.left =  `${value * 0.15}px`;
+    cloud.style.right =  `${value * 0.35}px`;
 }
 
 window.addEventListener('scroll',changePosition);
+

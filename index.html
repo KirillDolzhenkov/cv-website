@@ -67,8 +67,11 @@
         </header>
         <main class="main">
             <section class="home section" id="home">
-                <img src="assets/img/stars.png" alt="">
+
                 <div class="home-container container grid">
+                    <img src="assets/img/stars.png" alt="" class="stars" id="stars">
+                    <img src="assets/img/cloud.png" alt="" class="clouds" id="clouds">
+                    
                     <div class="home-content grid">
                         <!--<div class="home-social">
                             <a href="https://www.linkedin.com/in/kirill-dolzhenkov-a30557206/" target="_blank" class="home-social-icon">
@@ -85,21 +88,21 @@
                             </a>
                         </div>-->
                         <div></div>
-                        <div class="home-img">
+                        <div class="home-img" >
                             <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M 192 90 C 191 159 132 187 100.226 186.353 C 53 185 10 141 11 85 C 14 28 66 0 97.9666 0.0016 C 136 0 192 18 192 90 Z"/>
                                 </mask>
                                 <g mask="url(#mask0)">
                                     <path d="M 192 90 C 191 159 132 187 100.226 186.353 C 53 185 10 141 11 85 C 14 28 66 0 97.9666 0.0016 C 136 0 192 18 192 90 Z"/>
-                                    <image class="home-blob-img" x="19" y="6" xlink:href="assets/img/avatar.png"/>
+                                    <image class="home-blob-img" x="9" y="9" xlink:href="assets/img/test3.png"/>
                                 </g>
                             </svg>
                         </div>
                         <div class="home-data">
                             <h1 class="home-tittle">Hi there, I'am Kirill</h1>
                             <h3 class="home-subtittle">Frontend developer</h3>
-                            <p class="home-description">with experience in creating and optimization SPA using React, Redux, Typescript, HTML, CSS, JS</p>
+                            <p class="home-description" id="home-description">with experience in creating and optimization SPA using React, Redux, Typescript, HTML, CSS, JS</p>
                            <!-- <a href="#contact" class="button button-flex ripple">
                                 Contact Me<span class="icon-circle-right button-icon"></span>
                             </a>-->
@@ -161,6 +164,9 @@
 
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
+
+
+
                 <span class="section-subtitle">My technical level</span>
 
                 <div class="skills-container container grid">

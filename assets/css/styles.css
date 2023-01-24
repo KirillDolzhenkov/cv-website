@@ -20,6 +20,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 99%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
+    --sky-color: linear-gradient(#7587de, #b1d2fa);
+    --stars-opacity: 0.4;
 
     /*font*/
     --body-font: "Poppins", sans-serif;
@@ -61,15 +63,22 @@ body.dark-theme {
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);*/
 
 
-    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    /*--first-color-second: hsl(var(--hue-color), 30%, 8%);*/
+    --first-color-second: hsl(240, 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 25%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
-    --container-color: hsl(var(--hue-color), 29%, 16%);;
+    /*--body-color: hsl(var(--hue-color), 28%, 12%);*/
+    --body-color: hsl(240, 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
 
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 49%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    /*--scroll-bar-color: hsl(var(--hue-color), 12%, 49%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);*/
+    --scroll-bar-color: hsl(240, 12%, 49%);
+    --scroll-thumb-color: hsl(240, 12%, 36%);
+
+    --sky-color: linear-gradient(#2b1055, #7587de);
+    --stars-opacity: 0.6;
 }
 
 /*change dark theme*/
@@ -146,7 +155,11 @@ img {
 
 .section {
     padding: 2rem 0 4rem;
-    border: solid green 2px;
+/*    border: solid green 2px;*/
+
+
+    /*for stars: */
+    position: relative;
 }
 
 .section-title {
@@ -288,19 +301,66 @@ img {
     /*
     background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     */
-    background: linear-gradient(#2b1055, #7587de);
+    background: var(--sky-color);
+    overflow-x: hidden;
 }
+
+.home::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(to top, var(--body-color), transparent);
+    /*z-index: 1000;*/
+    z-index: 3;
+}
+
+
 
 .home-container {
     gap: 1rem;
-    border: solid purple 2px;
+    /*border: solid purple 2px;*/
 }
 
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+
+
+    opacity: var(--stars-opacity);
+    z-index: 1;
+}
+
+.clouds {
+    /*animation:  cld calc(8s * var(--i)) linear infinite;*/
+    opacity: .4;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+/*@keyframes cld{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}*/
+
 .home-content {
-    grid-template-columns: .5fr 3fr;
+    grid-template-columns: .5fr .3fr;
     padding-top: 3.5rem;
     align-items: center;
-    border: solid sienna 2px;
+    /*border: solid sienna 2px;*/
 }
 
 /*icons*/
@@ -324,8 +384,21 @@ img {
 /*Avatar main*/
 .home-blob {
     width: 200px;
-    fill: var(--first-color);
-    border: solid greenyellow 2px
+    /*fill: hsl(360, 69%, 61%);*/
+    /*fill: #FFF;*/
+    fill: #fafaac;
+
+    filter: drop-shadow(0 0 40px #FFF);
+
+
+
+
+
+    /*for stars*/
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
 }
 
 .home-blob-img {
@@ -334,7 +407,13 @@ img {
 
 .home-data {
     grid-column: 1/3;
-    border: solid black 2px
+
+
+    /*for stars*/
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 22;
 }
 
 .home-subtittle {
@@ -352,7 +431,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: aqua solid 2px;
+    /*border: aqua solid 2px;*/
 }
 
 /*test*/
@@ -386,7 +465,7 @@ img {
     border-radius: .5rem;
     font-weight: var(--font-medium);
 
-    box-shadow: 0 0 4px #999;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 
     /* Ripple effect */
     background-position: center;
@@ -497,6 +576,31 @@ img {
     justify-content: center;
     border: orange solid 2px;
 }
+
+.skills{
+    background: linear-gradient(#7587de, #a2dafa);
+
+}
+
+
+
+
+.qualification {
+    background: #094b65;
+    position: relative;
+}
+
+.skills::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(to top, #094b65, transparent);
+    /*z-index: 1000;*/
+    z-index: 3;
+}
+
 
 .skills-container {
     row-gap: 0;
@@ -767,8 +871,8 @@ img {
     }
 
     .header,
-    .main,
-    .footer-container{
+    /*.main,*/
+    .footer-container {
         padding: 0 1rem;
     }
 
