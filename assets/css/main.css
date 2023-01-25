@@ -1,0 +1,196 @@
+:root {
+    --header-height: 3rem;
+
+    /*colors*/
+    --hue-color: 360;
+
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #FFF;
+
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 99%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    --sky-color: linear-gradient(#7587de, #b1d2fa);
+    --stars-opacity: 0.4;
+
+    /*font*/
+    --body-font: "Poppins", sans-serif;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .813rem;
+    --small-font-size: .75rem;
+
+    /*font-weight*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*margin-bottom*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* z-index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*change dark theme*/
+body.dark-theme {
+    /*--hue-color: 240;
+
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);*/
+
+
+    /*--first-color-second: hsl(var(--hue-color), 30%, 8%);*/
+    --first-color-second: hsl(240, 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 25%, 16%);
+    /*--body-color: hsl(var(--hue-color), 28%, 12%);*/
+    --body-color: hsl(240, 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+
+    /*--scroll-bar-color: hsl(var(--hue-color), 12%, 49%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);*/
+    --scroll-bar-color: hsl(240, 12%, 49%);
+    --scroll-thumb-color: hsl(240, 12%, 36%);
+
+    --sky-color: linear-gradient(#2b1055, #7587de);
+    --stars-opacity: 0.6;
+}
+
+/*change dark theme*/
+
+/*big-screen*/
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+        --small-font-size: .813rem;
+    }
+}
+
+/*night-theme buttons v*/
+.nav-buttons {
+    display: flex;
+    border: solid red 2px;
+    align-items: center;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+/*night-theme buttons ^*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    /* background-color: #202124;*/
+    color: var(--text-color)
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 2rem 0 4rem;
+    /*    border: solid green 2px;*/
+
+
+    /*for stars: */
+    position: relative;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}

@@ -1,0 +1,231 @@
+/*TEST*/
+.home {
+    /*
+    background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    */
+    background: var(--sky-color);
+    overflow-x: hidden;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(to top, var(--body-color), transparent);
+    /*z-index: 1000;*/
+    z-index: 3;
+}
+
+
+
+.home-container {
+    gap: 1rem;
+    /*border: solid purple 2px;*/
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+
+
+    opacity: var(--stars-opacity);
+    z-index: 1;
+}
+
+.clouds {
+    /*animation:  cld calc(8s * var(--i)) linear infinite;*/
+    opacity: .4;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+/*@keyframes cld{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}*/
+
+.home-content {
+    grid-template-columns: .5fr .3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+    /*border: solid sienna 2px;*/
+}
+
+/*icons*/
+.home-social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    border: solid darkgray 2px;
+}
+
+.home-social-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+
+.home-social-icon:hover {
+    color: var(--first-color-alt);
+}
+
+/*Avatar main*/
+.home-blob {
+    width: 200px;
+    /*fill: hsl(360, 69%, 61%);*/
+    /*fill: #FFF;*/
+    fill: #fafaac;
+
+    filter: drop-shadow(0 0 40px #FFF);
+
+
+
+
+
+    /*for stars*/
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.home-blob-img {
+    width: 170px;
+}
+
+.home-data {
+    grid-column: 1/3;
+
+
+    /*for stars*/
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 22;
+}
+
+.home-subtittle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home-description {
+    margin-bottom: var(--mb-2);
+}
+
+/*test*/
+.home-test-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*border: aqua solid 2px;*/
+}
+
+/*test*/
+
+/*scroll*/
+.home-scroll-button {
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home-scroll-button:hover {
+    transform: translateY(.25rem);
+}
+
+.home-scroll-name {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+.home-scroll-arrow {
+    font-size: 1.25rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+
+    /* Ripple effect */
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+
+    /* Ripple effect */
+    background: var(--first-color-alt) radial-gradient(circle, transparent 1%, var(--first-color-alt) 1%) center/15000%;
+}
+
+.button:active {
+    background-color: var(--first-color);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.button-icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Ripple effect */
+/*.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: var(--first-color-alt) radial-gradient(circle, transparent 1%, var(--first-color-alt) 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: var(--first-color);
+    background-size: 100%;
+    transition: background 0s;
+}*/
+
+
+
+/* Button style */
+/*button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+}*/

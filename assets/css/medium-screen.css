@@ -1,0 +1,26 @@
+@media screen and (min-width: 568px) {
+    .home-content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .home-data {
+        grid-column: initial;
+    }
+
+    .home-img {
+        order: 1;
+        justify-content: center;
+    }
+
+    .about-container,
+    .skills-container,
+    .contact-container,
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*.qualification-sections {
+        display: grid;
+        grid-template-columns: .6fr;
+    }*/
+}
